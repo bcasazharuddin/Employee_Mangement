@@ -1,0 +1,31 @@
+.camera-box {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.seconds {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 30px);
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+  animation: blinker 1s linear infinite;
+}
